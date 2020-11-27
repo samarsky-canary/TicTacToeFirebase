@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etFriendName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name of friend"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/view_background"/>
+
+            <Button
+                android:id="@+id/btRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Request"
+                android:onClick="btRequestEvent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background_pressed"
+                />
+
+            <Button
+                android:id="@+id/btAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept"
+                android:onClick="btAcceptEvent"
+                android:background="@drawable/button_background_pressed"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/TT1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/TT2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/TT3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/TT4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/TT5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/TT6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/TT7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/TT8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/TT9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="buttonTicTacClick"
+                    android:scaleType="centerInside" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:onClick="Reset"
+                android:text="RESET"
+                android:background="@drawable/button_background_pressed"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
